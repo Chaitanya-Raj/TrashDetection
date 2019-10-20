@@ -27,7 +27,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card">
-          <img class="img-fluid img-thumbnail" src="{{ image1 }}" alt="Waste image">
+          <img class="img-fluid img-thumbnail" src="{{ i1 }}" alt="Waste image">
           <div class="card-body">
             <h2 class="card-title"> </h2>
           </div>
@@ -37,7 +37,7 @@
 
       <div class="col-md-4">
         <div class="card">
-          <img class="img-fluid img-thumbnail" src="{{ image2 }}" alt="Waste image">
+          <img class="img-fluid img-thumbnail" src="{{ i2 }}" alt="Waste image">
           <div class="card-body">
             <h2 class="card-title text-dark"> {{ name }} </h2>
 
@@ -47,7 +47,7 @@
       </div>
       <div class="col-md-4">
         <div class="card">
-          <img class="img-fluid img-thumbnail" src="{{ image3 }}" alt="Waste image">
+          <img class="img-fluid img-thumbnail" src="{{ i3 }}" alt="Waste image">
           <div class="card-body">
             <h2 class="card-title"> </h2>
           </div>
@@ -59,14 +59,14 @@
   <div class="container lead">
     <span style="font-color:red " class="">Recyclable: </span> {{ recyclable }}
     <br>
-    <span style="font-color:red">Biodegradable: </span> Yes/No
+    <span style="font-color:red">Type of waste: </span> {{ Type }}
     <br>
-    <span style="font-color:red">Bin Color: </span> {{ waste }}
+    <span style="font-color:red">Bin Color: </span> {{ bin }}
   </div>
   <hr>
   <div class="container lead mb-5">
 
-    <a href="{{ procedure }}">Click here</a>
+    <a href="{{ vid }}">Click here to see how it's recycled</a>
   </div>
 
 

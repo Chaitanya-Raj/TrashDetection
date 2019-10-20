@@ -30,11 +30,11 @@ def result():
     subject = request.form.get("topic")
     data = getDirt(subject)
     print(data)
-    return render_template("waste.html", name=data[0], waste=data[1], recyclable=data[2], procedure=data[3], image1=data[4], image2=data[5], image3=data[6])
+    return render_template("waste.html", name=data[0], Type=data[1], recyclable=data[2], i1=data[3], i2=data[4], i3=data[5], bin=data[6], vid=data[7])
 
 
 def getDirt(info):
-    conn = sqlite3.connect('TestDB.db')
+    conn = sqlite3.connect('TestDBn.db')
     c = conn.cursor()
     c.execute("SELECT * FROM data WHERE name='"+info+"'")
     a = c.fetchall()
