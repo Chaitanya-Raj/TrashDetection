@@ -25,23 +25,21 @@ def wet():
     return render_template('wet.html')
 
 
-@app.route("/result", methods=["GET"])
+@app.route("/waste", methods=["GET"])
 def result():
-    subject = request.form.get("waste")
+    subject = request.form.get("topic")
     data = getDirt(subject)
+    print(data)
+    return render_template("waste.html", name=data[0], waste=data[1], recyclable=data[2], procedure=data[3])
 
-    return render_template("result.html",name=data[0],waste=data[1],recyclable=data[2],procedure=data[3])
 
 def getDirt(info):
-    conn = sqlite3.connect('TestDB.db') 
+    conn = sqlite3.connect('TestDB.db')
     c = conn.cursor()
     c.execute("SELECT * FROM data WHERE name='"+info+"'")
     a = c.fetchall()
     print(a)
     return a
-
-
-
 
 
 # run the application
