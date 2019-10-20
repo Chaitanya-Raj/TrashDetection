@@ -30,7 +30,7 @@ def result():
     subject = request.form.get("topic")
     data = getDirt(subject)
     print(data)
-    return render_template("waste.html", name=data[0], waste=data[1], recyclable=data[2], procedure=data[3])
+    return render_template("waste.html", name=data[0], waste=data[1], recyclable=data[2], procedure=data[3], image1=data[4], image2=data[5], image3=data[6])
 
 
 def getDirt(info):
