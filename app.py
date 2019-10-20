@@ -25,7 +25,7 @@ def wet():
     return render_template('wet.html')
 
 
-@app.route("/waste", methods=["GET"])
+@app.route("/waste", methods=["POST"])
 def result():
     subject = request.form.get("topic")
     data = getDirt(subject)
@@ -39,7 +39,7 @@ def getDirt(info):
     c.execute("SELECT * FROM data WHERE name='"+info+"'")
     a = c.fetchall()
     print(a)
-    return a
+    return a[0]
 
 
 # run the application
