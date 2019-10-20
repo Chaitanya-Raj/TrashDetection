@@ -34,7 +34,7 @@ def result():
 
 
 def getDirt(info):
-    conn = sqlite3.connect('TestDBn.db')
+    conn = sqlite3.connect('TestDBm.db')
     c = conn.cursor()
     c.execute("SELECT * FROM data WHERE name='"+info+"'")
     a = c.fetchall()
