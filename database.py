@@ -9,11 +9,11 @@ import sqlite3
 import pandas as pd
 from pandas import DataFrame
 
-conn = sqlite3.connect('TestDB.db')  
+conn = sqlite3.connect('TestDBn.db')  
 c = conn.cursor()
-read_clients = pd.read_csv(r'da.csv')
+read_clients = pd.read_csv(r'db.csv')
 read_clients.to_sql('data', conn, if_exists='append', index = False)
-c.execute("SELECT * FROM data WHERE type='wet'")
+c.execute("SELECT * FROM data WHERE type='Wet'")
 #c.execute('SELECT * FROM data')
 #names = [description[0] for description in c.description]
 #info = '''wiki-calculuswithmrjames.wikispaces.com'''
@@ -23,7 +23,7 @@ c.execute("SELECT * FROM data WHERE type='wet'")
 #c.execute("SELECT * FROM data WHERE identifier='"+info+"'")
 a = c.fetchall()
 print(a)
-c.execute("SELECT * FROM data WHERE type='dry'")
+c.execute("SELECT * FROM data WHERE type='Dry'")
 a = c.fetchall()
 print(a)
 #c.fetchall()

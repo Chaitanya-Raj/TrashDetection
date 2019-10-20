@@ -26,9 +26,9 @@
       <div class="row" >
         <div class="col-md-4">
           <div class="card">  
-            <img class="img-fluid img-thumbnail"src="hey.jpg" alt="Waste image">
+            <img class="img-fluid img-thumbnail"src="{{ procedure }}" alt="Waste image">
             <div class="card-body"> 
-              <h2 class="card-title"> {{ name }}</h2>
+              <h2 class="card-title"> </h2>
             </div>
           </div>
         </div>
@@ -36,9 +36,9 @@
         
         <div class="col-md-4">
           <div class="card"> 
-            <img class="img-fluid img-thumbnail"src="hey.jpg" alt="Waste image">
+            <img class="img-fluid img-thumbnail"src="{{ procedure }}" alt="Waste image">
             <div class="card-body"> 
-              <h2 class="card-title text-dark">  Waste </h2>
+              <h2 class="card-title text-dark">  {{ name }} </h2>
              
             </div>
           </div>
@@ -46,9 +46,9 @@
         </div>
         <div class="col-md-4">
           <div class="card">  
-            <img class="img-fluid img-thumbnail"src="hey.jpg" alt="Waste image">
+            <img class="img-fluid img-thumbnail"src="{{ procedure }}" alt="Waste image">
             <div class="card-body">
-              <h2 class="card-title"> Waste </h2>
+              <h2 class="card-title"> </h2>
             </div>
           </div>
         </div>
@@ -56,16 +56,16 @@
     </div>
     <hr>
 	<div class="container lead">
-		<span style="font-color:red " class="">Recyclable: </span> {{ recyclable }}
+		<span style="font-color:red " class="">Recyclable: </span> No
 		<br>
-		<span style="font-color:red">Biodegradable: </span> Yes/No
+		<span style="font-color:red">Biodegradable: </span> Yes
 		<br>
-		<span style="font-color:red">Bin Color: </span> {{ waste }}
+		<span style="font-color:red">Waste type: </span> {{ waste }}
 	</div>
 	<hr>
     <div class="container lead mb-5">
 
-    <a href="{{ procedure }}">Click here</a>
+    <a href="https://www.youtube.com/watch?v=o3CKCYzUPzw">Click here to see recycling process</a>
     </div>
 
 
