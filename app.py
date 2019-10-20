@@ -1,5 +1,5 @@
-from flask import Flask
-from flask import render_template
+from flask import Flask, render_template, request
+import sqlite3
 
 # creates a Flask application, named app
 app = Flask(__name__)
@@ -23,6 +23,25 @@ def dry():
 @app.route("/wet/")
 def wet():
     return render_template('wet.html')
+
+
+@app.route("/result", methods=["GET"])
+def result():
+    subject = request.form.get("waste")
+    data = getDirt(subject)
+
+    return render_template("result.html",name=data[0],waste=data[1],recyclable=data[2],procedure=data[3])
+
+def getDirt(info):
+    conn = sqlite3.connect('TestDB.db') 
+    c = conn.cursor()
+    c.execute("SELECT * FROM data WHERE name='"+info+"'")
+    a = c.fetchall()
+    print(a)
+    return a
+
+
+
 
 
 # run the application
