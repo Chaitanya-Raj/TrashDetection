@@ -1,0 +1,8 @@
+name,type,recycleable,imagelink,recycling process
+banana,wet,FALSE,https://s1.dmcdn.net/v/3PK8S1Oy-pV6H-QxV/x1080,
+apple,wet,FALSE,https://image.shutterstock.com/image-photo/red-apple-missing-bite-isolated-260nw-328470947.jpg,
+food,wet,FALSE,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoLNMj1SPyyzeSXNJk8V8GSJeOdP4h2a7CI8u-iMlXOTXX46raxg,
+glass,dry,TRUE,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ__gW1MDIXcf3AVy1IgXat1JqE8eu8Xcqg_7_j9kSz_iq992ye,
+plastic,dry,TRUE,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLB_KxtJV8NKdv41uQnn4peUSu1gDS6pvC3iJDs0KC1imjOT6T,
+paper,dry,TRUE,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaOFT1jXhoqFp25p00RMnSaOyL2jJjNKIZAKo9KTFbMyMbqTAJ,
+kitchen waste,wet,FALSE,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0YiwZbbl0PDUemjCUF7teyHuzJ0MawG_c55brPQ4ilsyTt4iEKw,
